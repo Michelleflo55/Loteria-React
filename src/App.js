@@ -22,7 +22,17 @@ function App() {
     query: "(min-device-width: 1201px )",
   });
   return (
-    <div></div>
+    <div>
+      <h1> React Responsive - a guide</h1>
+      {isMobileDevice && <Mobile />}
+      {isTabletDevice && <>
+      <TabletMobile />
+      {isDesktop && <Desktop />}
+      {isLaptop && <Laptop />}
+     {isBigScreen && <BigScreen />}
+</>}
+
+    </div>
   )
 }
 
