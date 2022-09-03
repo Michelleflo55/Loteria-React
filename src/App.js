@@ -1,5 +1,11 @@
 import { useMediaQuery } from 'react-responsive';
-import './styles/App.css';
+import './App.css';
+import BigScreen from './components/BigScreen'
+import Desktop from './components/Desktop'
+import Laptop from './components/Laptop'
+import Mobile from './components/Mobile'
+import TabletMobile from './components/TabletMobile'
+
 
 function App() {
   const isMobileDevice = useMediaQuery({
