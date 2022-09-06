@@ -1,18 +1,21 @@
+import { Route, Routes } from 'react-router'
 import '../src/App.css';
-import 'bootstrap/dist/css/bootstrap.css';
+
+//imported Pages
+import PlayIntro from './Pages/PlayIntro';
+
+
+
 
 
 
 function App() {
   
   return (
-    
     <div>
-     
-      <p>Hello</p>
-    {/* <Route path='/' element={<Home />} /> */}
-
-
+      <Routes>
+        <Route path='/' element={<PlayIntro />}/>
+      </Routes>
     </div>
   )
 }
